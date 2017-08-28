@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2185E5E51F505B9300AE4DDF /* TextChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2185E5E41F505B9300AE4DDF /* TextChange.swift */; };
+		21FAC8471F4E48E200812CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FAC8461F4E48E200812CEA /* AppDelegate.swift */; };
+		21FAC8491F4E48E200812CEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FAC8481F4E48E200812CEA /* ViewController.swift */; };
+		21FAC84C1F4E48E200812CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FAC84A1F4E48E200812CEA /* Main.storyboard */; };
+		21FAC84E1F4E48E200812CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FAC84D1F4E48E200812CEA /* Assets.xcassets */; };
+		21FAC8511F4E48E200812CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FAC84F1F4E48E200812CEA /* LaunchScreen.storyboard */; };
+		21FAC85C1F4E48E200812CEA /* PredictiveTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FAC85B1F4E48E200812CEA /* PredictiveTextFieldTests.swift */; };
+		21FAC8671F4E48E200812CEA /* PredictiveTextFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FAC8661F4E48E200812CEA /* PredictiveTextFieldUITests.swift */; };
+		21FAC8751F4E490000812CEA /* PredictiveTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FAC8741F4E490000812CEA /* PredictiveTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21FAC8581F4E48E200812CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21FAC83B1F4E48E200812CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21FAC8421F4E48E200812CEA;
+			remoteInfo = PredictiveTextField;
+		};
+		21FAC8631F4E48E200812CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21FAC83B1F4E48E200812CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21FAC8421F4E48E200812CEA;
+			remoteInfo = PredictiveTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2185E5E41F505B9300AE4DDF /* TextChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextChange.swift; sourceTree = "<group>"; };
+		21FAC8431F4E48E200812CEA /* PredictiveTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PredictiveTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FAC8461F4E48E200812CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21FAC8481F4E48E200812CEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21FAC84B1F4E48E200812CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21FAC84D1F4E48E200812CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21FAC8501F4E48E200812CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21FAC8521F4E48E200812CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21FAC8571F4E48E200812CEA /* PredictiveTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PredictiveTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FAC85B1F4E48E200812CEA /* PredictiveTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictiveTextFieldTests.swift; sourceTree = "<group>"; };
+		21FAC85D1F4E48E200812CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21FAC8621F4E48E200812CEA /* PredictiveTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PredictiveTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FAC8661F4E48E200812CEA /* PredictiveTextFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictiveTextFieldUITests.swift; sourceTree = "<group>"; };
+		21FAC8681F4E48E200812CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21FAC8741F4E490000812CEA /* PredictiveTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictiveTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21FAC8401F4E48E200812CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FAC8541F4E48E200812CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FAC85F1F4E48E200812CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21FAC83A1F4E48E200812CEA = {
+			isa = PBXGroup;
+			children = (
+				21FAC8451F4E48E200812CEA /* PredictiveTextField */,
+				21FAC85A1F4E48E200812CEA /* PredictiveTextFieldTests */,
+				21FAC8651F4E48E200812CEA /* PredictiveTextFieldUITests */,
+				21FAC8441F4E48E200812CEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21FAC8441F4E48E200812CEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21FAC8431F4E48E200812CEA /* PredictiveTextField.app */,
+				21FAC8571F4E48E200812CEA /* PredictiveTextFieldTests.xctest */,
+				21FAC8621F4E48E200812CEA /* PredictiveTextFieldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21FAC8451F4E48E200812CEA /* PredictiveTextField */ = {
+			isa = PBXGroup;
+			children = (
+				21FAC8461F4E48E200812CEA /* AppDelegate.swift */,
+				21FAC8481F4E48E200812CEA /* ViewController.swift */,
+				21FAC8741F4E490000812CEA /* PredictiveTextField.swift */,
+				2185E5E41F505B9300AE4DDF /* TextChange.swift */,
+				21FAC84A1F4E48E200812CEA /* Main.storyboard */,
+				21FAC84D1F4E48E200812CEA /* Assets.xcassets */,
+				21FAC84F1F4E48E200812CEA /* LaunchScreen.storyboard */,
+				21FAC8521F4E48E200812CEA /* Info.plist */,
+			);
+			path = PredictiveTextField;
+			sourceTree = "<group>";
+		};
+		21FAC85A1F4E48E200812CEA /* PredictiveTextFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				21FAC85B1F4E48E200812CEA /* PredictiveTextFieldTests.swift */,
+				21FAC85D1F4E48E200812CEA /* Info.plist */,
+			);
+			path = PredictiveTextFieldTests;
+			sourceTree = "<group>";
+		};
+		21FAC8651F4E48E200812CEA /* PredictiveTextFieldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21FAC8661F4E48E200812CEA /* PredictiveTextFieldUITests.swift */,
+				21FAC8681F4E48E200812CEA /* Info.plist */,
+			);
+			path = PredictiveTextFieldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21FAC8421F4E48E200812CEA /* PredictiveTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FAC86B1F4E48E200812CEA /* Build configuration list for PBXNativeTarget "PredictiveTextField" */;
+			buildPhases = (
+				21FAC83F1F4E48E200812CEA /* Sources */,
+				21FAC8401F4E48E200812CEA /* Frameworks */,
+				21FAC8411F4E48E200812CEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PredictiveTextField;
+			productName = PredictiveTextField;
+			productReference = 21FAC8431F4E48E200812CEA /* PredictiveTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21FAC8561F4E48E200812CEA /* PredictiveTextFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FAC86E1F4E48E200812CEA /* Build configuration list for PBXNativeTarget "PredictiveTextFieldTests" */;
+			buildPhases = (
+				21FAC8531F4E48E200812CEA /* Sources */,
+				21FAC8541F4E48E200812CEA /* Frameworks */,
+				21FAC8551F4E48E200812CEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21FAC8591F4E48E200812CEA /* PBXTargetDependency */,
+			);
+			name = PredictiveTextFieldTests;
+			productName = PredictiveTextFieldTests;
+			productReference = 21FAC8571F4E48E200812CEA /* PredictiveTextFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21FAC8611F4E48E200812CEA /* PredictiveTextFieldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FAC8711F4E48E200812CEA /* Build configuration list for PBXNativeTarget "PredictiveTextFieldUITests" */;
+			buildPhases = (
+				21FAC85E1F4E48E200812CEA /* Sources */,
+				21FAC85F1F4E48E200812CEA /* Frameworks */,
+				21FAC8601F4E48E200812CEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21FAC8641F4E48E200812CEA /* PBXTargetDependency */,
+			);
+			name = PredictiveTextFieldUITests;
+			productName = PredictiveTextFieldUITests;
+			productReference = 21FAC8621F4E48E200812CEA /* PredictiveTextFieldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21FAC83B1F4E48E200812CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "AJ Bartocci";
+				TargetAttributes = {
+					21FAC8421F4E48E200812CEA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 25NQ367WU2;
+						ProvisioningStyle = Automatic;
+					};
+					21FAC8561F4E48E200812CEA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 25NQ367WU2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 21FAC8421F4E48E200812CEA;
+					};
+					21FAC8611F4E48E200812CEA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 25NQ367WU2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 21FAC8421F4E48E200812CEA;
+					};
+				};
+			};
+			buildConfigurationList = 21FAC83E1F4E48E200812CEA /* Build configuration list for PBXProject "PredictiveTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21FAC83A1F4E48E200812CEA;
+			productRefGroup = 21FAC8441F4E48E200812CEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21FAC8421F4E48E200812CEA /* PredictiveTextField */,
+				21FAC8561F4E48E200812CEA /* PredictiveTextFieldTests */,
+				21FAC8611F4E48E200812CEA /* PredictiveTextFieldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21FAC8411F4E48E200812CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FAC8511F4E48E200812CEA /* LaunchScreen.storyboard in Resources */,
+				21FAC84E1F4E48E200812CEA /* Assets.xcassets in Resources */,
+				21FAC84C1F4E48E200812CEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FAC8551F4E48E200812CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FAC8601F4E48E200812CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21FAC83F1F4E48E200812CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FAC8751F4E490000812CEA /* PredictiveTextField.swift in Sources */,
+				21FAC8491F4E48E200812CEA /* ViewController.swift in Sources */,
+				2185E5E51F505B9300AE4DDF /* TextChange.swift in Sources */,
+				21FAC8471F4E48E200812CEA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FAC8531F4E48E200812CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FAC85C1F4E48E200812CEA /* PredictiveTextFieldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FAC85E1F4E48E200812CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FAC8671F4E48E200812CEA /* PredictiveTextFieldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21FAC8591F4E48E200812CEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21FAC8421F4E48E200812CEA /* PredictiveTextField */;
+			targetProxy = 21FAC8581F4E48E200812CEA /* PBXContainerItemProxy */;
+		};
+		21FAC8641F4E48E200812CEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21FAC8421F4E48E200812CEA /* PredictiveTextField */;
+			targetProxy = 21FAC8631F4E48E200812CEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21FAC84A1F4E48E200812CEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21FAC84B1F4E48E200812CEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21FAC84F1F4E48E200812CEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21FAC8501F4E48E200812CEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21FAC8691F4E48E200812CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21FAC86A1F4E48E200812CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21FAC86C1F4E48E200812CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 25NQ367WU2;
+				INFOPLIST_FILE = PredictiveTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajbartocci.PredictiveTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		21FAC86D1F4E48E200812CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 25NQ367WU2;
+				INFOPLIST_FILE = PredictiveTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajbartocci.PredictiveTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		21FAC86F1F4E48E200812CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 25NQ367WU2;
+				INFOPLIST_FILE = PredictiveTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajbartocci.PredictiveTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PredictiveTextField.app/PredictiveTextField";
+			};
+			name = Debug;
+		};
+		21FAC8701F4E48E200812CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 25NQ367WU2;
+				INFOPLIST_FILE = PredictiveTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajbartocci.PredictiveTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PredictiveTextField.app/PredictiveTextField";
+			};
+			name = Release;
+		};
+		21FAC8721F4E48E200812CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 25NQ367WU2;
+				INFOPLIST_FILE = PredictiveTextFieldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajbartocci.PredictiveTextFieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PredictiveTextField;
+			};
+			name = Debug;
+		};
+		21FAC8731F4E48E200812CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 25NQ367WU2;
+				INFOPLIST_FILE = PredictiveTextFieldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajbartocci.PredictiveTextFieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PredictiveTextField;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21FAC83E1F4E48E200812CEA /* Build configuration list for PBXProject "PredictiveTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FAC8691F4E48E200812CEA /* Debug */,
+				21FAC86A1F4E48E200812CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21FAC86B1F4E48E200812CEA /* Build configuration list for PBXNativeTarget "PredictiveTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FAC86C1F4E48E200812CEA /* Debug */,
+				21FAC86D1F4E48E200812CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21FAC86E1F4E48E200812CEA /* Build configuration list for PBXNativeTarget "PredictiveTextFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FAC86F1F4E48E200812CEA /* Debug */,
+				21FAC8701F4E48E200812CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21FAC8711F4E48E200812CEA /* Build configuration list for PBXNativeTarget "PredictiveTextFieldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FAC8721F4E48E200812CEA /* Debug */,
+				21FAC8731F4E48E200812CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21FAC83B1F4E48E200812CEA /* Project object */;
+}
