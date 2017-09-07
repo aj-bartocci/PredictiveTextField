@@ -30,6 +30,11 @@ class PredictiveTextField: UITextField {
     }
     */
     
+    @IBInspectable var textOffset: CGFloat = 2.0
+    @IBInspectable var placeHolderColor: UIColor = .lightGray
+    @IBInspectable var borderColor: UIColor = .black
+    @IBInspectable var borderWidth: CGFloat = 1.0
+    
     fileprivate weak var userDelegate: UITextFieldDelegate?
     /** PredictiveTextField overrides and passes
      
@@ -112,6 +117,27 @@ class PredictiveTextField: UITextField {
 //        let input = text ?? ""
 //        return predictionDataSource?.predictiveTextField(self, suggestionForInput: input) ?? ""
 //    }
+    
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        let rect = super.editingRect(forBounds: bounds)
+        let insets = UIEdgeInsetsMake(0, textOffset, 0, textOffset)
+        return UIEdgeInsetsInsetRect(rect, insets)
+    }
+    
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        let rect = super.textRect(forBounds: bounds)
+        let insets = UIEdgeInsetsMake(0, textOffset, 0, textOffset)
+        return UIEdgeInsetsInsetRect(rect, insets)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layer.borderWidth = borderWidth
+        self.layer.borderColor = borderColor.cgColor
+        let place = self.placeholder ?? ""
+        let placeTxt = NSAttributedString(string: place, attributes: [NSForegroundColorAttributeName: placeHolderColor])
+        self.attributedPlaceholder = placeTxt
+    }
     
     // can add check for case as well
     func textChangeFrom(_ fromString: String, toString: String) -> TextChange {
@@ -256,8 +282,12 @@ extension PredictiveTextField: UITextFieldDelegate {
     /// Styles fullText to the textColor and userInput to predictionColor
     func formatText(fullText: String, userInput: String) {
         
+        // TODO: check if all caps etc
+        
+        let full = fullText.uppercased()
+        
         let userCol = textColor ?? UIColor.black
-        let attrString = NSMutableAttributedString(string: fullText, attributes: [NSForegroundColorAttributeName: predictionColor])
+        let attrString = NSMutableAttributedString(string: full, attributes: [NSForegroundColorAttributeName: predictionColor])
         let userRange = NSRange(location: 0, length: userInput.characters.count)
         attrString.addAttribute(NSForegroundColorAttributeName, value: userCol, range: userRange)
         
@@ -270,10 +300,13 @@ extension PredictiveTextField: UITextFieldDelegate {
             formatText(fullText: prediction, userInput: prediction)
             userText = prediction
         }
-        if endEditingOnReturn {
+        
+        let shouldReturn = userDelegate?.textFieldShouldReturn?(self) ?? true
+        
+        if endEditingOnReturn && shouldReturn {
             self.endEditing(true)
         }
-        return userDelegate?.textFieldShouldReturn?(self) ?? true
+        return shouldReturn
     }
     
     func forceUserInput(string: String) {
