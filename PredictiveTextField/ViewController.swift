@@ -41,6 +41,10 @@ extension ViewController: PredictiveTextFieldDataSource {
     
     func predictiveTextField(_ textField: UITextField, suggestionForInput input: String) -> String? {
         
+        guard let text = textField.text, text.characters.count > 0 else {
+            return nil 
+        }
+        
         let prediction = "this is a test"
         
         if prediction.lowercased().hasPrefix(input.lowercased()) {

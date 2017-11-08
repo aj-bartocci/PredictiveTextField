@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 /**
  Data source required for supplying predictions
@@ -41,6 +42,7 @@ class PredictiveTextField: UITextField {
     * textFieldShouldReturn(_ textField: UITextField) -> Bool
     * textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String)
     */
+    fileprivate var tapView = UIView()
     override var delegate: UITextFieldDelegate? {
         get {
             return userDelegate
@@ -74,6 +76,7 @@ class PredictiveTextField: UITextField {
     
     fileprivate var kvoContext = UnsafeMutableRawPointer(bitPattern: 13371237)
     fileprivate func setup() {
+        tapView.backgroundColor = .clear
         self.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         super.delegate = self
         
@@ -84,7 +87,7 @@ class PredictiveTextField: UITextField {
 //    }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        
+    
 //        guard context == kvoContext else {
 //            // change didn't occur from here so call super
 //            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: &kvoContext)
@@ -137,6 +140,7 @@ class PredictiveTextField: UITextField {
         let place = self.placeholder ?? ""
         let placeTxt = NSAttributedString(string: place, attributes: [NSForegroundColorAttributeName: placeHolderColor])
         self.attributedPlaceholder = placeTxt
+        tapView.frame = self.bounds
     }
     
     // can add check for case as well
@@ -210,6 +214,20 @@ class PredictiveTextField: UITextField {
 
 extension PredictiveTextField: UITextFieldDelegate {
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+//        textField.isUserInteractionEnabled = false
+        self.addSubview(tapView)
+        let cursorPos = userText.characters.count
+        moveCursorToLocation(cursorPos)
+        userDelegate?.textFieldDidBeginEditing?(textField)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+//        textField.isUserInteractionEnabled = true
+        tapView.removeFromSuperview()
+        userDelegate?.textFieldDidEndEditing?(textField)
+    }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         // blank string "" means backspace
@@ -257,6 +275,11 @@ extension PredictiveTextField: UITextFieldDelegate {
             break
         }
         
+        if userText.characters.count == 0 {
+            forceUserInput(string: "")
+            return userDelegate?.textField?(self, shouldChangeCharactersIn: range, replacementString: string) ?? false
+        }
+        
         let finalText: String
         
         if let prediction = predictionDataSource?.predictiveTextField(self, suggestionForInput: userText) {
@@ -284,7 +307,8 @@ extension PredictiveTextField: UITextFieldDelegate {
         
         // TODO: check if all caps etc
         
-        let full = fullText.uppercased()
+//        let full = fullText.uppercased()
+        let full = fullText
         
         let userCol = textColor ?? UIColor.black
         let attrString = NSMutableAttributedString(string: full, attributes: [NSForegroundColorAttributeName: predictionColor])

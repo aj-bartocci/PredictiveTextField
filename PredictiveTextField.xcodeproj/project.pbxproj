@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DB0F4A91F953DA400E90ED4 /* PredictionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0F4A81F953DA400E90ED4 /* PredictionTextField.swift */; };
 		2185E5E51F505B9300AE4DDF /* TextChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2185E5E41F505B9300AE4DDF /* TextChange.swift */; };
 		21FAC8471F4E48E200812CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FAC8461F4E48E200812CEA /* AppDelegate.swift */; };
 		21FAC8491F4E48E200812CEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FAC8481F4E48E200812CEA /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DB0F4A81F953DA400E90ED4 /* PredictionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionTextField.swift; sourceTree = "<group>"; };
 		2185E5E41F505B9300AE4DDF /* TextChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextChange.swift; sourceTree = "<group>"; };
 		21FAC8431F4E48E200812CEA /* PredictiveTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PredictiveTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FAC8461F4E48E200812CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				21FAC8461F4E48E200812CEA /* AppDelegate.swift */,
 				21FAC8481F4E48E200812CEA /* ViewController.swift */,
 				21FAC8741F4E490000812CEA /* PredictiveTextField.swift */,
+				1DB0F4A81F953DA400E90ED4 /* PredictionTextField.swift */,
 				2185E5E41F505B9300AE4DDF /* TextChange.swift */,
 				21FAC84A1F4E48E200812CEA /* Main.storyboard */,
 				21FAC84D1F4E48E200812CEA /* Assets.xcassets */,
@@ -271,6 +274,7 @@
 				21FAC8751F4E490000812CEA /* PredictiveTextField.swift in Sources */,
 				21FAC8491F4E48E200812CEA /* ViewController.swift in Sources */,
 				2185E5E51F505B9300AE4DDF /* TextChange.swift in Sources */,
+				1DB0F4A91F953DA400E90ED4 /* PredictionTextField.swift in Sources */,
 				21FAC8471F4E48E200812CEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
